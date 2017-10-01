@@ -6,8 +6,8 @@
   </head>
   <body>
   <header class="page-header">
-    <a class="page-header-logo">
-      <img class="page-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
+    <a class="logo">
+      <img class="logo__image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle main-nav__toggle--open" type="button">Открыть меню</button>
@@ -20,7 +20,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">
+            <a class="site-list__link" href="form.html">
               Вязание на заказ
             </a>
           </li>
@@ -44,29 +44,29 @@
       <article class="catalog__item product">
         <a class="product__link" href="#">
           <img class="product__image" src="img/photo-1-mobile.jpg" alt="зайчик-попрыгайчик" width="260" height="195">
-          <h1 class="product__title">Зайчик-попрыгайчик</h1>
         </a>
+        <h1 class="product__title"><a class="product__link" href="#">Зайчик-попрыгайчик</a></h1>
         <p class="product__info">Рост 30 см, вес 200 г</p>
         <p class="product__price">1 200 руб.</p>
-        <button type="button" class="product__buy">Купить</button>
+        <a class="product__buy">Купить</a>
       </article>
       <article class="catalog__item product">
         <a class="product__link" href="#">
           <img class="product__image" src="img/photo-1-mobile.jpg" alt="корзинка для белья" width="260" height="195">
-          <h1 class="product__title">Корзинка для белья</h1>
         </a>
+        <h1 class="product__title"><a class="product__link" href="#">Корзинка для белья</a></h1>
         <p class="product__info">Диаметр 15 см, высота 10 см</p>
         <p class="product__price">690 руб.</p>
-        <button type="button" class="product__buy">Купить</button>
+        <a class="product__buy">Купить</a>
       </article>
       <article class="catalog__item product">
         <a class="product__link" href="#">
           <img class="product__image" src="img/photo-1-mobile.jpg" alt="зайчик-попрыгайчик" width="260" height="195">
-          <h1 class="product__title">Большая корзинка для игрушек</h1>
         </a>
+        <h1 class="product__title"><a class="product__link" href="#">Большая корзинка для игрушек</a></h1>
         <p class="product__info">Диаметр 30 см, высота 30 см</p>
         <p class="product__price">1 500 руб.</p>
-        <button type="button" class="product__buy">Купить</button>
+        <a class="product__buy">Купить</a>
       </article>
       <section class="catalog__item production">
         <h2 class="production__title">Процесс производства</h2>
@@ -98,21 +98,24 @@
     </div>
   </footer>
 
-  <section class="modal modal-to-cart">
-    <h2 class="modal-to-cart__title"> Добавить в корзину</h2>
+  <form class="modal modal-to-cart">
+    <h2 class="modal-to-cart__title">Добавить в корзину</h2>
     <p class="modal-to-cart__text"></p>
     <ul class="modal-to-cart__list">
       <li class="modal-to-cart__size">
         <label class="modal-to-cart__radio" for="first-size">S</label>
+        <input class="visually-hidden" type="radio" name="size" id="first-size" checked>
       </li>
       <li class="modal-to-cart__size">
         <label class="modal-to-cart__radio" for="second-size">M</label>
+        <input class="visually-hidden" type="radio" name="size" id="second-size">
       </li>
       <li class="modal-to-cart__size">
         <label class="modal-to-cart__radio" for="third-size">L</label>
+        <input class="visually-hidden" type="radio" name="size" id="third-size">
       </li>
     </ul>
-    <a class="modal-to-cart__add btn" href="#">Добавить</a>
-  </section>
+    <button type="button" class="modal-to-cart__add btn" href="#">Добавить</a>
+  </form>
   </body>
 </html>

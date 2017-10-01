@@ -6,8 +6,8 @@
   </head>
   <body>
   <header class="page-header">
-    <a class="page-header-logo">
-      <img class="page-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
+    <a class="logo">
+      <img class="logo__image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle main-nav__toggle--open" type="button">Открыть меню</button>
@@ -39,9 +39,6 @@
     </nav>
   </header>
   <main class="page-main">
-    <input class="visually-hidden" type="radio" name="size" id="first-size" checked>
-    <input class="visually-hidden" type="radio" name="size" id="second-size">
-    <input class="visually-hidden" type="radio" name="size" id="third-size">
     <h1 class="visually-hidden">Интернет-магазин «Мишка»</h1>
     <div class="top-promo">
       <b class="top-promo__slogan">Милые штуки ручной работы для дома</b>
@@ -58,7 +55,7 @@
     </section>
     <section class="featured">
         <header class="featured__header">
-          <h2 class="featured__title headline-2">Вязаные корзинки</h2>
+          <h2 class="featured__title">Вязаные корзинки</h2>
           <b class="featured__category">Товар недели</b>
         </header>
         <p class="featured__about">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
@@ -93,7 +90,7 @@
         <a class="fetured__order btn" href="#">Заказать</a>
     </section>
     <section class="about">
-      <h2 class="about__title headline-2">Коротко о нас:</h2>
+      <h2 class="about__title">Коротко о нас:</h2>
       <ul class="about__list">
         <li class="about__item about__item--eco">Экологически чистые материалы</li>
         <li class="about__item about__item--price">Скандинавский стиль по российской цене</li>
@@ -104,44 +101,38 @@
       </ul>
     </section>
     <section class="reviews">
-      <h2 class="reviews__title headline-2">Отзывы</h2>
+      <h2 class="reviews__title">Отзывы</h2>
       <div class="reviews__list">
-        <blockquote class="reviews__item slider__item">
+        <blockquote class="reviews__item">
           <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <cite class="reviews__author">Анастасия Красильникова</cite>
-          <p class="reviews__contact"> @misssssiskras</p>
+          <a href="https://www.instagram.com/misssssiskras/" class="reviews__contact">@misssssiskras</a>
         </blockquote>
       </div>
-      <div class="reviews__pagination">
+      <div class="reviews__pagination pagination">
         <button class="pagination__item pagination__item--prev btn" type="button">Предыдущий</button>
         <button class="pagination__item pagination__item--next btn" type="button">Следующий</button>
       </div>
       <a class="reviews__write btn" href="#">Написать</a>
     </section>
     <section class="contacts">
-      <h2 class="contancs__title headline-2">Контакты</h2>
-      <table class="contacts__info">
-        <tr >
-          <td class="contacts__parameter">
-            e-mail:
-          </td>
-          <td class="contacts__value">
-            <a class="email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </td>
-        </tr>
-        <tr >
-          <td class="contacts__parameter">
-            адрес:
-          </td>
-          <td class="contacts__value">
-            г. Санкт-Петербург,<br>
-            ул. Большая Конюшенная,<br>
-            д. 19/8, офис 101
-          </td>
-        </tr>
-      </table>
+      <h2 class="contancs__title">Контакты</h2>
+      <ul class="contacts__info">
+        <li class="contacts__parameter">
+          e-mail:
+        </li>
+        <li class="contacts__value">
+          <a class="email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        </li>
+        <li class="contacts__parameter">
+          адрес:
+        </li>
+        <li class="contacts__value">
+          г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+        </li>
+      </ul>
       <img src="img/map-mobile@1x.jpg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="322" height="457">
-      <button class="contacts__write-us btn">Напишите нам</button>
+      <a class="contacts__write-us btn">Напишите нам</a>
     </section>
   </main>
   <footer class="page-footer">
@@ -166,21 +157,24 @@
     </div>
   </footer>
 
-  <section class="modal modal-to-cart">
-    <h2 class="modal-to-cart__title"> Добавить в корзину</h2>
+  <form class="modal modal-to-cart">
+    <h2 class="modal-to-cart__title">Добавить в корзину</h2>
     <p class="modal-to-cart__text"></p>
     <ul class="modal-to-cart__list">
       <li class="modal-to-cart__size">
         <label class="modal-to-cart__radio" for="first-size">S</label>
+        <input class="visually-hidden" type="radio" name="size" id="first-size" checked>
       </li>
       <li class="modal-to-cart__size">
         <label class="modal-to-cart__radio" for="second-size">M</label>
+        <input class="visually-hidden" type="radio" name="size" id="second-size">
       </li>
       <li class="modal-to-cart__size">
         <label class="modal-to-cart__radio" for="third-size">L</label>
+        <input class="visually-hidden" type="radio" name="size" id="third-size">
       </li>
     </ul>
-    <a class="modal-to-cart__add btn" href="#">Добавить</a>
-  </section>
+    <button type="button" class="modal-to-cart__add btn" href="#">Добавить</a>
+  </form>
   </body>
 </html>
