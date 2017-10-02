@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+  <header class="page-header">
+    <a class="logo">
+      <img class="logo__image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle main-nav__toggle--open" type="button">Открыть меню</button>
+      <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link">
+              Каталог товаров
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">
+              Вязание на заказ
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--search" href="#">
+              Поиск по сайту
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--cart" href="#">
+              Корзина: <span>пока пуста</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="main-headline">Каталог товаров</h1>
+    <section class="catalog">
+      <article class="catalog__item product">
+        <a class="product__link" href="#">
+          <img class="product__image" src="img/photo-1-mobile.jpg" alt="зайчик-попрыгайчик" width="260" height="195">
+        </a>
+        <h1 class="product__title"><a class="product__link" href="#">Зайчик-попрыгайчик</a></h1>
+        <p class="product__info">Рост 30 см, вес 200 г</p>
+        <p class="product__price">1 200 руб.</p>
+        <a class="product__buy">Купить</a>
+      </article>
+      <article class="catalog__item product">
+        <a class="product__link" href="#">
+          <img class="product__image" src="img/photo-1-mobile.jpg" alt="корзинка для белья" width="260" height="195">
+        </a>
+        <h1 class="product__title"><a class="product__link" href="#">Корзинка для белья</a></h1>
+        <p class="product__info">Диаметр 15 см, высота 10 см</p>
+        <p class="product__price">690 руб.</p>
+        <a class="product__buy">Купить</a>
+      </article>
+      <article class="catalog__item product">
+        <a class="product__link" href="#">
+          <img class="product__image" src="img/photo-1-mobile.jpg" alt="зайчик-попрыгайчик" width="260" height="195">
+        </a>
+        <h1 class="product__title"><a class="product__link" href="#">Большая корзинка для игрушек</a></h1>
+        <p class="product__info">Диаметр 30 см, высота 30 см</p>
+        <p class="product__price">1 500 руб.</p>
+        <a class="product__buy">Купить</a>
+      </article>
+      <section class="catalog__item production">
+        <h2 class="production__title">Процесс производства</h2>
+        <div class="production__video"></div>
+        <p class="production__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="production__order btn" href="#">Сделать заказ</a>
+      </section>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy/">Мы в Instagram</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://www.instagram.com/htmlacademy">Мы в Twitter</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+
+  <form class="modal modal-to-cart">
+    <h2 class="modal-to-cart__title">Добавить в корзину</h2>
+    <p class="modal-to-cart__text"></p>
+    <ul class="modal-to-cart__list">
+      <li class="modal-to-cart__size">
+        <label class="modal-to-cart__radio" for="first-size">S</label>
+        <input class="visually-hidden" type="radio" name="size" id="first-size" checked>
+      </li>
+      <li class="modal-to-cart__size">
+        <label class="modal-to-cart__radio" for="second-size">M</label>
+        <input class="visually-hidden" type="radio" name="size" id="second-size">
+      </li>
+      <li class="modal-to-cart__size">
+        <label class="modal-to-cart__radio" for="third-size">L</label>
+        <input class="visually-hidden" type="radio" name="size" id="third-size">
+      </li>
+    </ul>
+    <button type="button" class="modal-to-cart__add btn" href="#">Добавить</a>
+  </form>
+  </body>
+</html>
