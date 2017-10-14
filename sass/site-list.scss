@@ -3,13 +3,13 @@
   padding: 0;
   padding-left: 75px;
   margin: 0;
+}
 
-  &__link {
-    font-family: $base-font;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 24px;
-    text-decoration: none;
-    color: #000;
-  }
+.site-list__link {
+  font-family: $base-font;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  color: $base-headline-color;
 }

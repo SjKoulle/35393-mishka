@@ -2,17 +2,17 @@
   background-image: url(../img/hero-mobile@1x.jpg);
   padding-top: 75px;
   padding-bottom: 120px;
+}
 
-  &__slogan {
-    font-family: $base-font;
-    font-weight: 700;
-    font-size: 27px;
-    line-height: 30px;
-    color: #000;
+.top-promo__slogan {
+  font-family: $base-font;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  color: $base-headline-color;
 
-    display: block;
-    width: 250px;
-    text-align: center;
-    margin: 0 auto;
-  }
+  display: block;
+  width: 250px;
+  text-align: center;
+  margin: 0 auto;
 }

@@ -3,29 +3,28 @@
   font-size:17px;
   line-height: 20px;
   font-weight: 700;
+}
 
-  &__wrapper {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+.about__wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
-  &__title {
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 30px;
-    color: #000;
-    margin-bottom: 30px;
-  }
+.about__title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000;
+  margin-bottom: 30px;
+}
 
-  &__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 60px;
-  }
+.about__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 60px;
+}
 
-  &__item {
-    margin-bottom: 30px;
-  }
-
+.about__item {
+  margin-bottom: 30px;
 }
