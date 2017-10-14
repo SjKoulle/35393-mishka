@@ -1,0 +1,50 @@
+.product {
+  font-family: $base-font;
+  font-size: 13px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #444444;
+  margin-bottom: 30px;
+
+  &__link {
+    text-decoration: none;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link--blank {
+    font-size: 0;
+  }
+
+  &__border {
+    border: 1px solid #ececec;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 30px;
+  }
+
+  &__title {
+    color: #000;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__info {
+    margin-bottom: 55px;
+  }
+
+  &__price {
+    color: #000;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  &__buy {
+    font-size: 0;
+  }
+}

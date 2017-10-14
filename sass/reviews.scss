@@ -1,0 +1,50 @@
+.reviews {
+  font-family: $base-font;
+  font-size:15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #444444;
+
+  &__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &__title {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #000;
+    margin-bottom: 35px;
+  }
+
+  &__item {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__text {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 35px;
+  }
+
+  &__author {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    font-style: normal;
+    margin-bottom: 10px;
+    color: #000;
+  }
+
+  &__contact {
+    color: #444444;
+    text-decoration: none;
+  }
+
+  &__pagination {
+    margin-top: 35px;
+    margin-bottom: 38px;
+  }
+}

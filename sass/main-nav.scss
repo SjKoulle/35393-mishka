@@ -1,0 +1,22 @@
+.main-nav {
+    font-family: $base-font;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    background-color: #fff;
+    color: #000;
+
+    width: 320px;
+    margin: 0 auto;
+
+    &__toggle {
+      border: none;
+      font-size: 0;
+      background-color: transparent;
+
+    }
+
+/*    &__list {
+      display: none;
+    }*/
+}

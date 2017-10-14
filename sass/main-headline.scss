@@ -1,0 +1,17 @@
+.main-headline {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-color: #f1f1f1;
+
+  &__text{
+    text-align: center;
+    font-family: $base-font;
+    font-size: 27px;
+    line-height: 30px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+  }
+}

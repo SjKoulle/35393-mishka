@@ -1,0 +1,60 @@
+.featured{
+  font-family: $base-font;
+  font-size:15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #444444;
+
+  &__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &__title {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  &__category {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #63d1bb;
+    text-transform: uppercase;
+  }
+
+  &__info {
+    border-collapse: collapse;
+    margin-bottom: 28px;
+  }
+
+  &__line {
+    border-bottom: 1px solid #ececec;
+  }
+
+  &__cell {
+    padding: 5px 0;
+  }
+
+  &__parameter {
+    width: 100px;
+  }
+
+  &__image {
+    width: 260px;
+    height: 315px;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    color: #444444;
+  }
+
+  &__order {
+    width: 236px;
+    margin-bottom: 35px;
+  }
+}
