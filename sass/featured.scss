@@ -1,0 +1,59 @@
+.featured {
+  font-family: $base-font;
+  font-size:15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $base-color;
+}
+.featured__wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.featured__title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.featured__category {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $accent-color;
+  text-transform: uppercase;
+}
+
+.featured__info {
+  border-collapse: collapse;
+  margin-bottom: 28px;
+}
+
+.featured__line {
+  border-bottom: 1px solid $decoration-color;
+}
+
+.featured__cell {
+  padding: 5px 0;
+}
+
+.featured__parameter {
+  width: 100px;
+}
+
+.featured__image {
+  width: 260px;
+  height: 315px;
+}
+
+.featured__price {
+  font-weight: 700;
+  font-size: 17px;
+  text-align: center;
+  color: $base-color;
+}
+
+.featured__order {
+  width: 236px;
+  margin-bottom: 35px;
+}

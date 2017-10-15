@@ -1,0 +1,21 @@
+.main-nav {
+    font-family: $base-font;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    background-color: $base-background-color;
+    color: $base-headline-color;
+
+    width: 320px;
+    margin: 0 auto;
+}
+
+.main-nav__toggle {
+  border: none;
+  font-size: 0;
+  background-color: transparent;
+}
+
+/*   .main-nav__list {
+      display: none;
+    }*/

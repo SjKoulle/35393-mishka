@@ -1,0 +1,41 @@
+.modal-to-cart {
+  width: 320px;
+  margin: 0 auto;
+  font-family: $base-font;
+  font-size: 15px;
+  line-height: 17px;
+  color: $base-color;
+}
+
+.modal-to-cart__wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.modal-to-cart__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $base-headline-color;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.modal-to-cart__list {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.modal-to-cart__add {
+  background-color: $accent-color;
+  color: $base-background-color;
+  border-color: $accent-color;
+  width: 236px;
+}
