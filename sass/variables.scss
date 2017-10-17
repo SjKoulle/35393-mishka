@@ -1,4 +1,8 @@
+/*Шрифты*/
+
 $base-font: 'Open Sans', Arial, sans-serif;
+
+/*Цвета*/
 
 $base-color: #444444;
 $accent-color: #63d1bb;
@@ -12,5 +16,10 @@ $decoration-color: #ececec;
 $input-border-color: #000000;
 
 
-$base-background-color: #ffffff;
-$accent-background-color: #f1f1f1;
+$base-bg-color: #ffffff;
+$accent-bg-color: #f1f1f1;
+
+/*Ширины*/
+
+$tablet-width: 768px;
+$desktop-width: 1200px;
