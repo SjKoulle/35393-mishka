@@ -1,8 +1,39 @@
+@media (min-width: $tablet-width) {
+  .types {
+    width: 100%;
+    background-color: $header-bg-color;
+  }
+}
+
 .types__list {
     list-style: none;
     padding: 0;
     margin: 0;
   }
+
+@media (min-width: $tablet-width) {
+    .types__list {
+        display: flex;
+        flex-direction: row;
+
+        width: 668px;
+        margin: 0 auto;
+        padding-right: 50px;
+        padding-left: 50px;
+
+        flex-shrink: 0;
+    }
+}
+
+
+@media (min-width: $desktop-width) {
+  .types__list {
+    width: 1050px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+  }
+}
 
 .types__item {
   width: auto;
@@ -11,16 +42,36 @@
   padding-bottom: 30px;
 }
 
+@media (min-width: $tablet-width) {
+  .types__item {
+    width: 334px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .types__item {
+    width: 525px;
+  }
+}
+
 .types__link {
   font-family: $base-font;
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
-  text-decoration: none;
   color: $base-bg-color;
+  text-decoration: none;
 
   display: block;
   width: 110px;
+}
+
+@media (min-width: $tablet-width) {
+  .types__link {
+    width: 120px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .types__item--interior {
