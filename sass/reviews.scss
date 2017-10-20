@@ -18,12 +18,13 @@
   padding-left: 30px;
   padding-right: 30px;
   position: relative;
+  margin: 0 auto;
+  width: 260px;
 }
 
 @media (min-width: $tablet-width) {
   .reviews__wrapper {
     width: 668px;
-    margin: 0 auto;
     padding-left: 50px;
     padding-right: 50px;
     display: flex;

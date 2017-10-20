@@ -19,15 +19,16 @@
 .featured__wrapper {
     padding-right: 30px;
     padding-left: 30px;
+    margin: 0 auto;
+    width: 260px;
 }
 
 @media (min-width: $tablet-width) {
     .featured__wrapper {
         display: flex;
         flex-direction: row;
-
         width: 668px;
-        margin: 0 auto;
+
         padding-right: 50px;
         padding-left: 50px;
 

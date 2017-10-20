@@ -14,12 +14,13 @@
 .about__wrapper {
   padding-left: 30px;
   padding-right: 30px;
+  margin: 0 auto;
+  width: 260px;
 }
 
 @media (min-width: $tablet-width) {
   .about__wrapper {
     width: 668px;
-    margin: 0 auto;
     padding-left: 50px;
     padding-right: 50px;
   }
