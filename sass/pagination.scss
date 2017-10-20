@@ -1,12 +1,36 @@
 .pagination {
   font-size: 0;
+  display: flex;
+  flex-shrink: 1;
 }
+
+@media (min-width: $tablet-width) {
+  .pagination {
+    position: absolute;
+    right: 50px;
+    bottom: 53px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pagination {
+    right: 50px;
+    bottom: 173px;
+  }
+}
+
 .pagination__item {
   width: 128px;
   height: 50px;
-  background-color: $base-background-color;
+  background-color: $base-bg-color;
   border: 1px solid $decoration-color;
   margin: 0;
   padding: 0;
   font-size: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .pagination__item {
+    width: 84px;
+  }
 }

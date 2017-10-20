@@ -7,3 +7,10 @@
   border-bottom: 1px solid $email-color;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .email {
+    font-size: 17px;
+    line-height: 30px
+  }
+}

@@ -1,4 +1,8 @@
+/*Шрифты*/
+
 $base-font: 'Open Sans', Arial, sans-serif;
+
+/*Цвета*/
 
 $base-color: #444444;
 $accent-color: #63d1bb;
@@ -9,8 +13,15 @@ $base-headline-color: #000000;
 $placeholder-color: rgba(68, 68, 68, 0.3);
 
 $decoration-color: #ececec;
+$dark-decoration-color: #e5e5e5;
 $input-border-color: #000000;
 
 
-$base-background-color: #ffffff;
-$accent-background-color: #f1f1f1;
+$base-bg-color: #ffffff;
+$header-bg-color: #f9f9f9;
+$accent-bg-color: #f1f1f1;
+
+/*Ширины*/
+
+$tablet-width: 768px;
+$desktop-width: 1150px;

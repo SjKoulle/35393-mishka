@@ -1,25 +1,32 @@
 @import 'variables.scss';
+@import "scaffolding.scss";
 @import 'visually-hidden.scss';
 @import 'email.scss';
 @import 'btn.scss';
 @import 'modal.scss';
+@import 'modal-to-cart.scss';
+
+@import 'page-header.scss';
+@import 'main-nav.scss';
+@import "user-list.scss";
+
 @import 'pagination.scss';
 @import 'about.scss';
 @import 'catalog.scss';
 @import 'contacts.scss';
-@import 'copyright';
 @import 'featured.scss';
 @import 'form.scss';
-@import 'logo.scss';
+
 @import 'main-headline.scss';
-@import 'main-nav.scss';
-@import 'modal-to-cart.scss';
+
+
 @import 'page-footer.scss';
-@import 'page-header.scss';
+
+
 @import 'page-main.scss';
 @import 'reviews.scss';
 @import 'product.scss';
-@import 'site-list.scss';
+
 @import 'social.scss';
 @import 'top-promo.scss';
 @import 'types.scss';
