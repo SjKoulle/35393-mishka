@@ -14,6 +14,7 @@
 .about__wrapper {
   padding-left: 30px;
   padding-right: 30px;
+  padding-top: 32px;
   margin: 0 auto;
   width: 260px;
 }
@@ -23,6 +24,7 @@
     width: 668px;
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 62px;
   }
 }
 
@@ -32,6 +34,7 @@
     margin: 0 auto;
     padding-left: 225px;
     padding-right: 225px;
+    padding-top: 70px;
   }
 }
 
@@ -41,7 +44,7 @@
   line-height: 30px;
   color: #000;
   margin:0;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   padding: 0;
 }
 
@@ -50,7 +53,8 @@
     width: 100%;
     font-size: 43px;
     line-height: 40px;
-    margin-bottom: 45px;
+    margin-left: -5px;
+    margin-bottom: 47px;
   }
 }
 
@@ -58,7 +62,7 @@
   .about__title {
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
   }
 }
 
@@ -66,7 +70,8 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  padding-bottom: 60px;
+  padding-bottom: 10px;
+  color: $base-headline-color;
 }
 
 @media (min-width: $tablet-width) {
@@ -77,19 +82,93 @@
     justify-content: space-between;
     font-size: 20px;
     line-height: 22px;
-    padding-bottom: 25px;
+    padding-bottom: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__list {
+    padding-bottom: 43px;
   }
 }
 
 .about__item {
-  margin-bottom: 30px;
+  position: relative;
+  padding-top: 60px;
+  margin-bottom: 23px;
+}
+
+.about__item--eco::before {
+  content: "";
+  width: 60px;
+  height: 50px;
+  position: absolute;
+  top: 6px;
+  left: 9px;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon-feature-flower.svg);
+}
+
+.about__item--price::before {
+  content: "";
+  width: 60px;
+  height: 50px;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon-feature-money.svg);
+}
+
+.about__item--likes::before {
+  content: "";
+  width: 60px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon-feature-heart.svg);
+}
+
+.about__item--hand-made::before {
+  content: "";
+  width: 60px;
+  height: 50px;
+  position: absolute;
+  top: 9px;
+  left: 3px;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon-feature-ball.svg);
+}
+
+.about__item--service::before {
+  content: "";
+  width: 60px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: -3px;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon-feature-rocket.svg);
+}
+
+.about__item--present::before {
+  content: "";
+  width: 60px;
+  height: 50px;
+  position: absolute;
+  top: 7px;
+  left: 3px;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon-feature-gift.svg);
 }
 
 @media (min-width: $tablet-width) {
   .about__item {
     width: 314px;
     margin-right: 20px;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 
  .about__item--hand-made{

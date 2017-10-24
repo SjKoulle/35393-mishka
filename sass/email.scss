@@ -4,6 +4,8 @@
   line-height: 30px;
   font-weight: 400;
   color: $base-color;
+  display: block;
+  padding-bottom: 1px;
   border-bottom: 1px solid $email-color;
   text-decoration: none;
 }

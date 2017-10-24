@@ -6,9 +6,9 @@
 }
 
 .types__list {
-    width: 260px;
+    width: 320px;
     list-style: none;
-    padding: 0 30px;
+    padding: 0;
     margin: 0 auto;
   }
 
@@ -25,7 +25,6 @@
     }
 }
 
-
 @media (min-width: $desktop-width) {
   .types__list {
     width: 1050px;
@@ -37,9 +36,7 @@
 
 .types__item {
   width: auto;
-  padding-left: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -54,6 +51,20 @@
   }
 }
 
+.types__item--interior svg {
+  position: absolute;
+  top: 29px;
+  right: 36px;
+  opacity: 0.5;
+}
+
+.types__item--toys svg {
+  position: absolute;
+  top: 31px;
+  right: 33px;
+  opacity: 0.5;
+}
+
 .types__link {
   font-family: $base-font;
   font-size: 19px;
@@ -63,7 +74,11 @@
   text-decoration: none;
 
   display: block;
-  width: 110px;
+  width: auto;
+  padding-left: 36px;
+  padding-top: 28px;
+  padding-bottom: 29px;
+  padding-right: 160px;
 }
 
 @media (min-width: $tablet-width) {

@@ -22,11 +22,51 @@
 @media (min-width: $tablet-width) {
   .social__list {
     font-size: 0;
+    padding-left: 28px;
   }
 }
 
 .social__item {
-  width: 25px;
-  height: 30px; /*для сетки*/
-  background-color: pink;
+  position: relative;
+}
+
+.social__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  position: relative;
+}
+
+.social__link--instagram::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 6px;
+  left: 0;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon-insta.svg);
+}
+
+
+.social__link--facebook::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 5px;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon-fb.svg);
+}
+
+.social__link--twitter::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 6px;
+  left: 2px;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon-twitter.svg);
 }

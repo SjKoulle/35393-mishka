@@ -13,10 +13,14 @@
   }
 }
 
+.user-list__search,
+.user-list__cart {
+    position: relative;
+}
+
 @media (min-width: $tablet-width) {
     .user-list__search,
     .user-list__cart {
-      position: relative;
       width: 264px;
       padding-right: 0;
       padding-left: 0;
@@ -29,6 +33,12 @@
     }
 }
 
+@media (min-width: $desktop-width) {
+    .user-list__cart {
+      width: 266px;
+    }
+}
+
 
 .user-list__search-link,
 .user-list__cart-link {
@@ -36,31 +46,87 @@
     font-size: 17px;
     font-weight: 700;
     line-height: 24px;
+    position: relative;
 
     display: block;
+    width: 100%;
 
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 29px;
     padding-left: 75px;
 
     text-decoration: none;
 
     color: $base-headline-color;
-    border-bottom: 1px solid $decoration-color;
     background-color: $base-bg-color;
+}
+
+@media (max-width: $mobile-width-only)  {
+    .main-nav--opened .user-list__search,
+    .main-nav--opened .user-list__cart {
+      width: 100%;
+      border-bottom: 1px solid $decoration-color;
+    }
+
+    .main-nav--opened .user-list__cart-link,
+    .main-nav--opened .user-list__search-link {
+        width: 245px;
+        margin: 0 auto;
+    }
+
+    .main-nav--nojs .user-list__search,
+    .main-nav--nojs .user-list__cart {
+      width: 100%;
+    }
+
+    .main-nav--nojs .user-list__search {
+      border-bottom: 1px solid $decoration-color;
+    }
+
+    .main-nav--nojs .user-list__cart-link,
+    .main-nav--nojs .user-list__search-link {
+        width: 245px;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: $tablet-width) {
     .user-list__search-link {
+        width: 80px;
+        padding-left: 0;
         font-size: 0;
-        border-bottom: none;
     }
 
     .user-list__cart-link {
         padding-top: 32px;
         padding-bottom: 32px;
-        padding-left: 82px;
+        padding-left: 0;
         text-align: right;
-        border-bottom: none;
+    }
+}
+
+.user-list__search-link svg {
+    position: absolute;
+    top: 30px;
+    left: 32px;
+    opacity: 0.2;
+}
+
+.user-list__cart-link svg {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    opacity: 0.2;
+}
+
+@media (min-width: $tablet-width) {
+    .user-list__search-link svg {
+        top: 37px;
+        left: 33px;
+    }
+
+    .user-list__cart-link svg {
+        top: 35px;
+        left: 32px;
     }
 }
