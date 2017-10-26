@@ -14,7 +14,7 @@
   width: 260px;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 75px;
+  padding-top: 72px;
   padding-bottom: 75px;
   margin: 0 auto;
 }
@@ -23,9 +23,14 @@
   .main-headline__wrapper {
     width: 668px;
     margin: 0 auto;
-    padding-top: 102px;
+    padding-top: 95px;
     padding-right: 50px;
-    padding-left: 50px;
+    padding-left: 45px;
+    padding-bottom: 78px;
+  }
+
+  .main-headline__wrapper--form {
+    padding-top: 93px;
     padding-bottom: 80px;
   }
 }
@@ -35,7 +40,8 @@
     width: 1050px;
     padding-right: 50px;
     padding-left: 50px;
-    padding-bottom: 99px;
+    padding-bottom: 101px;
+    padding-top: 93px;
   }
 }
 
@@ -50,11 +56,19 @@
   padding: 0;
 }
 
+.main-headline__text--form {
+  margin-left: 6px;
+}
+
 @media (min-width: $tablet-width) {
   .main-headline__text {
     font-size: 43px;
     line-height: 50px;
     margin-left: 150px;
+  }
+
+  .main-headline__text--form {
+    margin-left: 141px;
   }
 }
 
@@ -62,7 +76,7 @@
   .main-headline__text {
     font-size: 53px;
     line-height: 57px;
-    margin-left: 300px;
+    margin-left: 285px;
   }
 }
 
