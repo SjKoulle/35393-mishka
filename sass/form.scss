@@ -33,13 +33,18 @@
   }
 
   .form__wrapper--inner-content {
-    padding-top: 50px;
+    padding-top: 52px;
+    padding-bottom: 14px;
   }
 
   .form__dark-wrapper {
     width: 100%;
     background-color: $accent-bg-color;
-    padding-top: 68px;
+    padding-top: 66px;
+  }
+
+  .form__dark-wrapper--contacts {
+    padding-top: 44px;
   }
 }
 
@@ -55,22 +60,33 @@
     padding-left: 50px;
     padding-right: 50px;
   }
+
+  .form__dark-wrapper {
+    padding-top: 64px;
+  }
+
+  .form__dark-wrapper--contacts {
+    padding-top: 45px;
+  }
 }
 
 .form__info {
-  margin-top: 30px;
+  padding: 0;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
   .form__info {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 52px;
+    margin-bottom: 49px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form__info {
-    margin-top: 130px;
+    margin-top: 102px;
     margin-left: 175px;
   }
 }
@@ -81,6 +97,14 @@
   padding: 0;
   padding-bottom: 7px;
   position: relative;
+}
+
+.form__filters-group--tel {
+  padding-top: 4px;
+}
+
+.form__filters-group--comment {
+  padding-bottom: 5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -102,6 +126,10 @@
     box-sizing: border-box;
     width: 100%;
   }
+
+  .form__filters-group--email {
+    padding-bottom: 25px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -121,24 +149,84 @@
 .form__filters-group p {
   padding: 0;
   margin: 0;
+  position: relative;
+}
+
+.form__filters-group svg {
+  position: absolute;
+  opacity: 0.2;
+}
+
+.form__filters-group--tel svg {
+  top: 12px;
+  right: 8px;
+}
+
+.form__filters-group--email svg {
+  top: 8px;
+  right: 4px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__filters-group--tel svg {
+    top: 13px;
+    right: 25px;
+  }
+
+  .form__filters-group--email svg {
+    right: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__filters-group--tel svg {
+    right: 9px;
+  }
+
+  .form__filters-group--email svg {
+    right: 4px;
+  }
 }
 
 .form__legend {
   display: block;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 17px;
+  line-height: 16px;
   text-transform: uppercase;
   color: $legend-color;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
+
+  &--name {
+    margin-bottom: 27px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .form__legend {
     position: absolute;
-    font-size: 17px;
-    line-height: 16px;
     top: 0;
     left: 0;
+  }
+
+  .form__legend--name {
+    top: 14px;
+    left: 2px;
+  }
+
+  .form__legend--tel {
+    top: 22px;
+    left: 1px;
+  }
+
+  .form__legend--email {
+    top: 15px;
+    left: 1px;
+  }
+
+  .form__legend--comment {
+    top: 15px;
+    left: 1px;
   }
 }
 
@@ -146,17 +234,40 @@
   .form__legend {
     left: 64px;
   }
+
+  .form__legend--name {
+    left: 62px;
+    top: 16px;
+  }
+
+  .form__legend--email {
+    top: 17px;
+    left: 63px;
+  }
+
+  .form__legend--color {
+    left: 60px;
+    top: 1px;
+  }
 }
 
-.form__legend--tel,
-.form__legend--email {
+.form__legend--tel {
   margin-bottom: 7px;
+}
+
+.form__legend--email {
+  margin-bottom: 10px;
 }
 
 .form__list {
   list-style: none;
   margin: 0;
+  margin-bottom: 13px;
   padding: 0;
+}
+
+.form__legend--comment {
+  margin-bottom: 26px;
 }
 
 @media (min-width: $tablet-width) {
@@ -166,6 +277,11 @@
     flex-shrink: 0;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  .form__list--colors {
+    justify-content: flex-start;
   }
 }
 
@@ -174,23 +290,28 @@
   font-size: 17px;
   line-height: 18px;
   color: $base-headline-color;
-  padding-left: 60px;
-  margin-bottom: 25px;
+  padding-left: 62px;
 }
 
 .form__option--radio {
   width: 196px;
+  padding-bottom: 24px;
 }
 
 .form__option--checkbox {
   width: 196px;
+  padding-bottom: 43px;
+}
+
+.form__option--checkbox:last-of-type {
+  padding-bottom: 22px;
 }
 
 @media (min-width: $tablet-width) {
   .form__option {
     font-size: 19px;
     padding-left: 80px;
-    margin-bottom: 55px;
+    padding-bottom: 58px;
   }
 
   .form__option--radio {
@@ -200,7 +321,9 @@
   .form__option--checkbox {
     width: 133px;
   }
+}
 
+@media (max-width: 1149px) {
   .form__option--checkbox:nth-of-type(odd) {
     margin-right: 50px;
   }
@@ -208,20 +331,19 @@
 
 @media (min-width: $desktop-width) {
   .form__option {
-    padding-left: 84px;
-    margin-bottom: 60px;
+    padding-left: 81px;
+    margin-bottom: 0px;
   }
 
   .form__option--radio {
     width: 421px;
+    padding-left: 81px;
+    margin-bottom: 0;
   }
 
   .form__option--checkbox {
     width: 124px;
-  }
-
-  .form__option--checkbox {
-    margin-right: 50px;
+    margin-right: 56px;
   }
 
   .form__option--checkbox:nth-of-type(3n) {
@@ -231,7 +353,7 @@
 
 .form__input-wrapper {
   display: block;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 
 .form__label {
@@ -245,7 +367,7 @@
   .form__input-wrapper {
     display: flex;
     align-items: baseline;
-    margin-bottom: 18px;
+    margin-bottom: 26px;
   }
 
   .form__label {
@@ -264,10 +386,11 @@
   width: 260px;
   border: none;
   border-bottom: 2px solid $input-border-color;
-  padding: 15px 0;
+  padding: 0;
+  padding-top: 13px;
+  padding-bottom: 14px;
   color: $base-color;
   font-size: 17px;
-  margin-bottom: 25px;
 }
 
 .form__input:hover,
@@ -295,7 +418,27 @@
   color: $placeholder-color;
 }
 
+.form__input--tel {
+  padding-top: 16px;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.form__input--email {
+  margin-bottom: 25px;
+}
+
 @media (min-width: $tablet-width) {
+  .form__input {
+    font-size: 19px;
+    padding-left: 18px;
+  }
+
+  .form__input--tel {
+    margin-bottom: 16px;
+  }
+
+
   .form__input--tel,
   .form__input--email {
     background-color: $accent-bg-color;
@@ -308,13 +451,21 @@
 }
 
 .form__field-message {
-  width: 246px;
+  width: 226px;
+  height: 108px;
   font-family: $base-font;
   border: 2px solid $base-color;
   resize: none;
   font-size: 17px;
-  margin-bottom: 18px;
-  padding: 5px;
+  padding: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__field-message {
+    height: 140px;
+    font-size: 19px;
+    padding-top: 10px;
+  }
 }
 
 .form__info-required {
@@ -338,19 +489,22 @@
 
 .form__send {
   width: 260px;
-  margin-top: 30px;
+  margin-top: 27px;
   margin-bottom: 55px;
 }
 
 @media (min-width: $tablet-width) {
   .form__send {
     order: -1;
-    margin-top: 50px;
+    margin-top: 34px;
+    margin-bottom: 37px;
+    width: 230px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form__send {
     margin-left: 175px;
+    margin-top: 30px;
   }
 }

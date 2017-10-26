@@ -28,6 +28,11 @@
     padding-left: 45px;
     padding-bottom: 78px;
   }
+
+  .main-headline__wrapper--form {
+    padding-top: 93px;
+    padding-bottom: 80px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -51,11 +56,19 @@
   padding: 0;
 }
 
+.main-headline__text--form {
+  margin-left: 6px;
+}
+
 @media (min-width: $tablet-width) {
   .main-headline__text {
     font-size: 43px;
     line-height: 50px;
     margin-left: 150px;
+  }
+
+  .main-headline__text--form {
+    margin-left: 141px;
   }
 }
 
@@ -63,7 +76,7 @@
   .main-headline__text {
     font-size: 53px;
     line-height: 57px;
-    margin-left: 296px;
+    margin-left: 285px;
   }
 }
 
