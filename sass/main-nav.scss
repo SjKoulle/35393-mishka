@@ -55,6 +55,16 @@
 
     display: flex;
     justify-content: center;
+    cursor: pointer;
+}
+
+.main-nav__logo:hover,
+.main-nav__logo:focus {
+    opacity: 0.6;
+}
+
+.main-nav__logo:active {
+    opacity: 0.3;
 }
 
 .main-nav__logo-image {
@@ -62,12 +72,11 @@
     height: 35px;
     margin-top: 22px;
     margin-bottom: 22px;
-    /*margin-left: 116px;*/
 }
 
 @media (min-width: $tablet-width) {
     .main-nav__logo-image {
-        width: 320px; /*для крупной сетки*/
+        width: 320px;
         margin-top: 20px;
         margin-left: 0;
         margin-bottom: 0;
@@ -76,9 +85,9 @@
 
 @media (min-width: $desktop-width) {
     .main-nav__logo-image {
-        width: 180px; /*для крупной сетки*/
-        margin-top: 20px;
-        margin-left: 0;
+        width: 180px;
+        margin-top: 9px;
+        margin-left: -66px;
         margin-bottom: 0;
     }
 }
@@ -210,6 +219,26 @@
     color: $base-headline-color;
     background-color: transparent;
 }
+
+.main-nav__link:hover,
+.main-nav__link:focus {
+    opacity: 0.6;
+}
+
+.main-nav__link:active {
+    opacity: 0.3;
+}
+
+.main-nav__link--active:hover,
+.main-nav__link--active:focus {
+    opacity: 1;
+}
+
+.main-nav__link--active:active {
+    opacity: 1;
+}
+
+
 
 @media (min-width: $tablet-width) {
   .main-nav__link {

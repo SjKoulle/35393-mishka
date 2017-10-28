@@ -17,6 +17,21 @@
   padding-top: 32px;
   margin: 0 auto;
   width: 260px;
+  position: relative;
+}
+
+.about__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7px;
+  background-image: url(../img/bg-zigzag-line.svg);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: auto 6px;
+  z-index: 50;
 }
 
 @media (min-width: $tablet-width) {
@@ -25,6 +40,12 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 62px;
+  }
+
+  .about__wrapper::before {
+    height: 18px;
+    background-size: auto 17px;
+    top: -9px;
   }
 }
 
@@ -35,6 +56,12 @@
     padding-left: 225px;
     padding-right: 225px;
     padding-top: 70px;
+  }
+
+  .about__wrapper::before {
+    top: -14px;
+    height: 24px;
+    background-size: auto 23px;
   }
 }
 
@@ -54,7 +81,7 @@
     font-size: 43px;
     line-height: 40px;
     margin-left: -5px;
-    margin-bottom: 47px;
+    margin-bottom: 50px;
   }
 }
 
@@ -82,7 +109,7 @@
     justify-content: space-between;
     font-size: 20px;
     line-height: 22px;
-    padding-bottom: 36px;
+    padding-bottom: 33px;
   }
 }
 

@@ -27,6 +27,7 @@
   margin: 0;
   padding: 0;
   font-size: 0;
+  cursor: pointer;
 
   background-repeat: no-repeat;
   background-position: center center;
@@ -38,6 +39,15 @@
 
 .pagination__item--next {
   background-image: url(../img/icon-right-arrow.svg);
+}
+
+.pagination__item:hover,
+.pagination__item:focus {
+  opacity: 0.6;
+}
+
+.pagination__item:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

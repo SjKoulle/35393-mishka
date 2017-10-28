@@ -33,6 +33,10 @@
     flex-shrink: 0;
     justify-content: space-between;
     align-items: flex-start;
+
+    background-image: url(../img/review@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
   }
 }
 
@@ -43,6 +47,7 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 70px;
+     background-position: 50px top;
   }
 }
 
@@ -158,6 +163,8 @@
 @media (min-width: $tablet-width) {
   .reviews__pagination {
     order: 4;
+    margin-top: -50px;
+    margin-right: 3px;
   }
 }
 

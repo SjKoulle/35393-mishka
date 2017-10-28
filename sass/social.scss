@@ -38,35 +38,30 @@
   position: relative;
 }
 
-.social__link--instagram::before {
-  content: "";
-  width: 30px;
-  height: 30px;
+.social__link--instagram svg {
   position: absolute;
   top: 6px;
   left: 0;
-  background-repeat: no-repeat;
-  background-image: url(../img/icon-insta.svg);
 }
 
 
-.social__link--facebook::before {
-  content: "";
-  width: 30px;
-  height: 30px;
+.social__link--facebook svg {
   position: absolute;
   left: 5px;
-  background-repeat: no-repeat;
-  background-image: url(../img/icon-fb.svg);
 }
 
-.social__link--twitter::before {
-  content: "";
-  width: 30px;
-  height: 30px;
+.social__link--twitter svg {
   position: absolute;
   top: 6px;
   left: 2px;
-  background-repeat: no-repeat;
-  background-image: url(../img/icon-twitter.svg);
 }
+
+.social__link:hover path,
+.social__link:focus path {
+  fill: $footer-accent;
+}
+
+.social__link:active svg {
+  opacity: 0.3;
+}
+

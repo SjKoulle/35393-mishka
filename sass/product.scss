@@ -15,6 +15,15 @@
     align-items: flex-start;
 }
 
+.product:hover,
+.product:focus {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.1);
+}
+
+.product:active {
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.1);
+}
+
 @media (min-width: $tablet-width) {
     .product {
         font-size: 15px;
@@ -123,6 +132,15 @@
     color: $base-headline-color;
 }
 
+.product__title:hover,
+.product__title:focus {
+    opacity: 0.6;
+}
+
+.product__title:active {
+    opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
     .product__title {
         padding-right: 30px;
@@ -199,6 +217,18 @@
     right: 6px;
     top: 4px;
     opacity: 0.2;
+}
+
+.product__buy:hover svg,
+.product__buy:focus svg,
+.product__buy:hover path,
+.product__buy:focus path {
+    fill: $accent-color;
+    opacity: 1;
+}
+
+.product__buy:active svg {
+    opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

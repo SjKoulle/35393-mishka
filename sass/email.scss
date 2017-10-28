@@ -4,10 +4,20 @@
   line-height: 30px;
   font-weight: 400;
   color: $base-color;
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   padding-bottom: 1px;
   border-bottom: 1px solid $email-color;
   text-decoration: none;
+}
+
+.email:hover,
+.email:focus {
+  color: $email-color;
+}
+
+.email:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

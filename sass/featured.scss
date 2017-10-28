@@ -3,10 +3,10 @@
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
+    position: relative;
 
     color: $base-color;
 }
-
 
 @media (min-width: $tablet-width) {
     .featured {
@@ -15,6 +15,36 @@
         padding: 0;
     }
 }
+
+.featured::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -11px;
+
+    width: 100%;
+    height: 23px;
+    background-image: url(../img/bg-zigzag-fill.svg);
+    background-repeat: repeat-x;
+    background-size: auto 23px;
+    z-index: 50;
+    display: none;
+}
+
+@media (min-width: $tablet-width)  {
+    .featured::before {
+        display: block;
+    }
+}
+
+@media (min-width: $desktop-width)  {
+    .featured::before {
+        top: -16px;
+        height: 36px;
+        background-size: auto 36px;
+    }
+}
+
 
 .featured__wrapper {
     padding-right: 30px;
@@ -242,13 +272,26 @@
 .featured__image {
     width: 260px;
     height: 315px;
+    margin-bottom: 24px;
 }
 
 @media (min-width: $tablet-width) {
     .featured__image {
         position: absolute;
-        top: 7px;
+        top: 9px;
         right: -334px;
+        width: 333px;
+        height: 404px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .featured__image {
+        top: -159px;
+        right: -524px;
+        width: 525px;
+        height: 636px;
+        z-index: -1;
     }
 }
 
@@ -262,19 +305,19 @@
     color: $base-color;
     margin: 0;
     padding: 0;
-    padding-bottom: 10px;
+    padding-bottom: 26px;
 }
 
 @media (min-width: $tablet-width) {
     .featured__price {
         font-size: 20px;
-        margin-bottom: 25px;
+        margin-bottom: 10px;
     }
 }
 
 @media (min-width: $desktop-width) {
     .featured__price {
-        margin-bottom: 23px;
+        margin-bottom: 9px;
     }
 }
 

@@ -43,11 +43,24 @@
   display: none;
 }
 
+.page-footer__logo:hover path,
+.page-footer__logo:focus path {
+  fill: $footer-accent;
+}
+
+.page-footer__logo:active svg {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__logo {
     display: block;
     width: 127px;
     margin-top: 18px;
+  }
+
+  .page-footer__logo svg {
+    width: 103px;
   }
 }
 
@@ -68,7 +81,8 @@
 }
 
 .page-footer__copyright {
-  padding-top: 26px;
+  padding-top: 27px;
+  padding-bottom: 28px;
   margin-left: 38px;
   display: flex;
   flex-shrink: 0;
@@ -79,6 +93,8 @@
 @media (min-width: $tablet-width) {
   .page-footer__copyright {
     margin-left: 0;
+    padding-top: 31px;
+    padding-bottom: 27px;
   }
 }
 
@@ -89,15 +105,47 @@
   line-height: 20px;
   font-weight: 700;
   color: $base-headline-color;
-  margin-bottom: 28px;
-  margin-right: 30px;
-  padding-top: 2px;
+  margin-right: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__copyright-text {
+    margin-right: 51px;
+  }
 }
 
 .page-footer__copyright-link {
+  position: relative;
+}
+
+.page-footer__copyright-link span {
   font-size: 0;
 }
 
-.page-footer__copyright--link svg {
+.page-footer__copyright-link svg {
     fill: $accent-color;
+    position: absolute;
+    right: -30px;
+    bottom: -10px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__copyright-link svg {
+    right: 0;
+  }
+}
+
+.page-footer__copyright:hover svg,
+.page-footer__copyright:focus svg {
+    fill: $footer-accent;
+    cursor: pointer;
+}
+
+.page-footer__copyright:active svg {
+  opacity: 0.3;
+  fill: $footer-accent;
+}
+
+.page-footer__copyright:active .page-footer__copyright-text {
+  opacity: 0.3;
 }

@@ -4,12 +4,29 @@
   line-height: 24px;
   font-weight: 400;
   color: $base-color;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
   .form {
     font-size: 17px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -15px;
+
+    width: 100%;
+    height: 36px;
+    background-size: auto 36px;
+    background-image: url(../img/bg-zigzag-fill.svg);
+    background-repeat: repeat-x;
+    z-index: 50;
   }
 }
 
@@ -351,6 +368,107 @@
   }
 }
 
+.form__radio,
+.form__checkbox {
+  position: relative;
+}
+
+.form__radio::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -60px;
+  width: 16px;
+  height: 16px;
+  background-color: $base-bg-color;
+  border: 10px solid $base-bg-color;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px $base-color;
+}
+
+@media (min-width: $tablet-width) {
+  .form__radio::after {
+    width: 22px;
+    height: 22px;
+    top: -9px;
+    left: -77px;
+    border: 13px solid $base-bg-color;
+  }
+}
+
+.form__radio:hover::after,
+.form__radio:focus::after {
+  box-shadow: 0 0 0 2px $accent-color;
+}
+
+.form__radio:active::after {
+  box-shadow: 0 0 0 2px $placeholder-color;
+}
+
+input[type=radio]:checked+.form__radio::after {
+  background-color: $accent-color;
+}
+
+.form__checkbox::before {
+  position: absolute;
+  content: "";
+  top: -9px;
+  left: -62px;
+  width: 36px;
+  height: 36px;
+  border: 2px solid $base-color;
+}
+
+.form__checkbox:hover::before,
+.form__checkbox:focus::before {
+  border: 2px solid $accent-color;
+}
+
+.form__checkbox:active::before {
+  border: 2px solid $placeholder-color;
+}
+
+.form__checkbox::after {
+  position: absolute;
+  content: "";
+  height: 37px;
+  width: 37px;
+  background-color: transparent;
+  background-image: url(../img/icon-tick.svg);
+  background-repeat: no-repeat;
+  background-size: calc(70%);
+  left: -53px;
+  top: 2px;
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form__checkbox::before {
+    position: absolute;
+    content: "";
+    top: -12px;
+    left: -79px;
+    width: 48px;
+    height: 48px;
+    border: 2px solid $base-color;
+  }
+
+  .form__checkbox::after {
+    left: -70px;
+    top: -2px;
+    background-size: calc(110%);
+  }
+}
+
+input[type=checkbox]:checked+.form__checkbox::after {
+  display: block;
+}
+
+input[type=radio]:focus+.form__radio::after,
+input[type=checkbox]:focus+.form__checkbox::before {
+  border: 2px solid $accent-color;
+}
+
 .form__input-wrapper {
   display: block;
   margin-bottom: 20px;
@@ -428,6 +546,22 @@
   margin-bottom: 25px;
 }
 
+.form__input-wrapper--tell:hover path,
+.form__input-wrapper--tell:focus path,
+.form__input-wrapper--tell:active path,
+.form__input-wrapper--email:hover path,
+.form__input-wrapper--email:focus path,
+.form__input-wrapper--email:active path,
+.form__input-wrapper--tell:hover svg,
+.form__input-wrapper--tell:focus svg,
+.form__input-wrapper--tell:active svg,
+.form__input-wrapper--email:hover svg,
+.form__input-wrapper--email:focus svg,
+.form__input-wrapper--email:active svg {
+  fill: $accent-color;
+  opacity: 1;
+}
+
 @media (min-width: $tablet-width) {
   .form__input {
     font-size: 19px;
@@ -454,6 +588,7 @@
   width: 226px;
   height: 108px;
   font-family: $base-font;
+  color: $base-color;
   border: 2px solid $base-color;
   resize: none;
   font-size: 17px;
@@ -466,6 +601,12 @@
     font-size: 19px;
     padding-top: 10px;
   }
+}
+
+.form__field-message:hover,
+.form__field-message:focus,
+.form__field-message:active {
+  border-color: $accent-color;
 }
 
 .form__info-required {

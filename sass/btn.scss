@@ -17,3 +17,13 @@
     border: 2px solid $base-color;
     background-color: $base-bg-color;
 }
+
+.btn:hover,
+.btn:focus {
+    background-color: $base-color;
+    color: $base-bg-color;
+}
+
+.btn:active {
+    color: $base-bg-color-op-03;
+}

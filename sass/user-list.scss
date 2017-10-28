@@ -61,6 +61,43 @@
     background-color: $base-bg-color;
 }
 
+.user-list__search-link:hover span,
+.user-list__search-link:focus span,
+.user-list__cart-link:hover span,
+.user-list__cart-link:focus span {
+    opacity: 0.6;
+}
+
+.user-list__search-link:hover svg,
+.user-list__search-link:focus svg,
+.user-list__cart-link:hover svg,
+.user-list__cart-link:focus svg {
+    opacity: 1;
+}
+
+.user-list__search-link:hover path,
+.user-list__search-link:focus path,
+.user-list__cart-link:hover path,
+.user-list__cart-link:focus path {
+    fill: $accent-color;
+}
+
+.user-list__search-link:active span,
+.user-list__cart-link:active span {
+    opacity: 0.3;
+}
+
+.user-list__search-link:active svg,
+.user-list__cart-link:active svg {
+    opacity: 0.3;
+    fill: $accent-color;
+}
+
+.user-list__search-link:active path,
+.user-list__cart-link:active path {
+    fill: $accent-color;
+}
+
 @media (max-width: $mobile-width-only)  {
     .main-nav--opened .user-list__search,
     .main-nav--opened .user-list__cart {
