@@ -10,30 +10,30 @@
 
 .production:hover,
 .production:focus {
-    box-shadow: 0 6px 10px 0 rgba(0,0,0,.1);
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.1);
 }
 
 .production:active {
-    box-shadow: 0 3px 5px 0 rgba(0,0,0,.1);
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,.1);
 }
 
 @media (min-width: $tablet-width) {
-    .production {
-        font-size: 15px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        flex-shrink: 0;
-        padding-top: 0;
-    }
+  .production {
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    padding-top: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
-    .production {
-        width: 347px;
-        padding-left: 700px;
-        padding-top: 85px;
-    }
+  .production {
+    width: 347px;
+    padding-left: 700px;
+    padding-top: 85px;
+  }
 }
 
 .production__title {
@@ -57,31 +57,31 @@
   width: 36px;
   height: 32px;
   background-repeat: no-repeat;
-  background-image: url(../img/icon-video.svg);
+  background-image: url("../img/icon-video.svg");
 }
 
 @media (min-width: $tablet-width) {
-    .production__title {
-        width: 260px;
-        margin-left: 103px;
-        margin-bottom: 19px;
-        padding-top: 10px;
-        font-size: 20px;
-    }
-    .production__title::before {
-      left: -63px;
-    }
+  .production__title {
+    width: 260px;
+    margin-left: 103px;
+    margin-bottom: 19px;
+    padding-top: 10px;
+    font-size: 20px;
+  }
+  .production__title::before {
+    left: -63px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-    .production__title {
-        width: 230px;
-        margin-left: 59px;
-    }
-    .production__title::before {
-      left: 2px;
-      top: -44px;
-    }
+  .production__title {
+    width: 230px;
+    margin-left: 59px;
+  }
+  .production__title::before {
+    left: 2px;
+    top: -44px;
+  }
 }
 
 .production__video {
@@ -90,14 +90,14 @@
   outline: none;
   position: relative;
   background-color: $legend-color;
-  background-image: url(../img/video-mobile@1x.jpg);
+  background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
   margin-bottom: 26px;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .production__video {
-    background-image: url(../img/video-mobile@2x.jpg);
+    background-image: url("../img/video-mobile@2x.jpg");
   }
 }
 
@@ -110,7 +110,7 @@
   margin-top: -39px;
   margin-left: -51px;
   background-color: transparent;
-  background-image: url(../img/icon-play.svg);
+  background-image: url("../img/icon-play.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -130,36 +130,36 @@
 }
 
 @media (min-width: $tablet-width) {
-    .production__video {
-        order: -1;
-        width: 668px;
-        height: 455px;
-        background-image: url(../img/video-tablet@1x.jpg);
-    }
+  .production__video {
+    order: -1;
+    width: 668px;
+    height: 455px;
+    background-image: url("../img/video-tablet@1x.jpg");
+  }
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      .production__video {
-        background-image: url(../img/video-tablet@2x.jpg);
-      }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .production__video {
+      background-image: url("../img/video-tablet@2x.jpg");
     }
+  }
 }
 
 @media (min-width: $desktop-width) {
-    .production__video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 681px;
-        height: 454px;
-        margin-bottom: 0;
-        background-image: url(../img/video-desktop@1x.jpg);
-    }
+  .production__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 681px;
+    height: 454px;
+    margin-bottom: 0;
+    background-image: url("../img/video-desktop@1x.jpg");
+  }
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      .production__video {
-        background-image: url(../img/video-desktop@2x.jpg);
-      }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .production__video {
+      background-image: url("../img/video-desktop@2x.jpg");
     }
+  }
 }
 
 .production__info {
@@ -169,18 +169,18 @@
 }
 
 @media (min-width: $tablet-width) {
-    .production__info {
-        margin-left: 38px;
-        margin-bottom: 34px;
-        line-height: 30px;
-    }
+  .production__info {
+    margin-left: 38px;
+    margin-bottom: 34px;
+    line-height: 30px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-    .production__info {
-        margin-left: 60px;
-        margin-bottom: 45px;
-    }
+  .production__info {
+    margin-left: 60px;
+    margin-bottom: 45px;
+  }
 }
 
 .production__order {
@@ -190,17 +190,17 @@
 }
 
 @media (min-width: $tablet-width) {
-    .production__order {
-        width: 561px;
-        margin-left: 40px;
-        margin-bottom: 45px;
-    }
+  .production__order {
+    width: 561px;
+    margin-left: 40px;
+    margin-bottom: 45px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-    .production__order {
-        width: 206px;
-        margin-left: 61px;
-        margin-bottom: 59px;
-    }
+  .production__order {
+    width: 206px;
+    margin-left: 61px;
+    margin-bottom: 59px;
+  }
 }

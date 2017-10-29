@@ -34,14 +34,14 @@
     justify-content: space-between;
     align-items: flex-start;
 
-    background-image: url(../img/review@1x.jpg);
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left top;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .reviews__wrapper {
-      background-image: url(../img/review@2x.jpg);
+      background-image: url("../img/review@2x.jpg");
     }
   }
 }

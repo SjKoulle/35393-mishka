@@ -13,16 +13,16 @@
   }
 
 @media (min-width: $tablet-width) {
-    .types__list {
-        display: flex;
-        flex-direction: row;
+  .types__list {
+    display: flex;
+    flex-direction: row;
 
-        width: 668px;
-        padding-right: 50px;
-        padding-left: 50px;
+    width: 668px;
+    padding-right: 50px;
+    padding-left: 50px;
 
-        flex-shrink: 0;
-    }
+    flex-shrink: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {

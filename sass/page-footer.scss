@@ -123,10 +123,10 @@
 }
 
 .page-footer__copyright-link svg {
-    fill: $accent-color;
-    position: absolute;
-    right: -30px;
-    bottom: -10px;
+  fill: $accent-color;
+  position: absolute;
+  right: -30px;
+  bottom: -10px;
 }
 
 @media (min-width: $tablet-width) {
@@ -137,8 +137,8 @@
 
 .page-footer__copyright:hover svg,
 .page-footer__copyright:focus svg {
-    fill: $footer-accent;
-    cursor: pointer;
+  fill: $footer-accent;
+  cursor: pointer;
 }
 
 .page-footer__copyright:active svg {

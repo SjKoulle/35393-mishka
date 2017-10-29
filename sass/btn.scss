@@ -1,29 +1,29 @@
 .btn {
-    font-family: $base-font;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 20px;
+  font-family: $base-font;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
 
-    display: block;
+  display: block;
 
-    margin: 0;
-    padding: 14px 10px;
+  margin: 0;
+  padding: 14px 10px;
 
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
 
-    color: $base-color;
-    border: 2px solid $base-color;
-    background-color: $base-bg-color;
+  color: $base-color;
+  border: 2px solid $base-color;
+  background-color: $base-bg-color;
 }
 
 .btn:hover,
 .btn:focus {
-    background-color: $base-color;
-    color: $base-bg-color;
+  background-color: $base-color;
+  color: $base-bg-color;
 }
 
 .btn:active {
-    color: $base-bg-color-op-03;
+  color: $base-bg-color-op-03;
 }
