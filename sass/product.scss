@@ -17,11 +17,11 @@
 
 .product:hover,
 .product:focus {
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .product:active {
-  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: $tablet-width) {

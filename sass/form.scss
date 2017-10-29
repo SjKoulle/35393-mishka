@@ -404,7 +404,7 @@
   box-shadow: 0 0 0 2px $placeholder-color;
 }
 
-input[type="radio"]:checked +.form__radio::after {
+input[type="radio"]:checked + .form__radio::after {
   background-color: $accent-color;
 }
 
