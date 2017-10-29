@@ -1,0 +1,15 @@
+.overlay {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 99;
+    display: none;
+    background-color: $base-bg-color;
+    opacity: 0.9;
+}
+
+.overlay--show {
+    display: block;
+}

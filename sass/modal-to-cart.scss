@@ -1,25 +1,57 @@
 .modal-to-cart {
-  width: 320px;
-  margin: 0 auto;
-  font-family: $base-font;
-  font-size: 15px;
-  line-height: 17px;
-  color: $base-color;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    display: none;
+    width: 260px;
+    height: 306px;
+    margin-top: -168px;
+    margin-left: -160px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px 0px;
+    border-top: 1px solid rgb(199, 199, 199);
 }
 
-.modal-to-cart__wrapper {
-  padding-left: 30px;
-  padding-right: 30px;
+@media (min-width: $tablet-width) {
+  .modal-to-cart {
+    width: 350px;
+    height: 302px;
+    margin-left: -284px;
+    padding-top: 34px;
+    padding-right: 108px;
+    padding-left: 108px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(199, 199, 199);
+    border-image: initial;
+  }
+}
+
+.modal-to-cart--show {
+    display: block;
 }
 
 .modal-to-cart__title {
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
   color: $base-headline-color;
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
+}
+
+.modal-to-cart__text {
+    margin-bottom: 23px;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
 }
 
 .modal-to-cart__list {
@@ -30,12 +62,56 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.modal-to-cart__radio {
+  display: block;
+  width: 78px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $base-color-op-01;
+  border-image: initial;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-to-cart__radio {
+    width: 108px;
+  }
+}
+
+.modal-to-cart__radio:hover,
+.modal-to-cart__radio:focus {
+  border-color: $base-color-op-03;
+}
+
+.modal-to-cart__radio:active {
+  border-color: $accent-color;
+}
+
+input[type="radio"]:checked+.modal-to-cart__radio {
+  border-color: $accent-color;
 }
 
 .modal-to-cart__add {
   background-color: $accent-color;
   color: $base-bg-color;
   border-color: $accent-color;
-  width: 236px;
+  width: 100%;
+}
+
+.modal-to-cart__add:hover,
+.modal-to-cart__add:focus {
+  background-color: $dark-accent-color;
+  border-color: $dark-accent-color;
 }

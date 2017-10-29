@@ -466,7 +466,7 @@ input[type=checkbox]:checked+.form__checkbox::after {
 
 input[type=radio]:focus+.form__radio::after,
 input[type=checkbox]:focus+.form__checkbox::before {
-  border: 2px solid $accent-color;
+  box-shadow: 0 0 0 2px $accent-color;
 }
 
 .form__input-wrapper {

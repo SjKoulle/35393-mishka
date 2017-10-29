@@ -38,6 +38,12 @@
     background-repeat: no-repeat;
     background-position: left top;
   }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .reviews__wrapper {
+      background-image: url(../img/review@2x.jpg);
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -47,7 +53,7 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 70px;
-     background-position: 50px top;
+    background-position: 50px top;
   }
 }
 
