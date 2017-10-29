@@ -10,11 +10,11 @@
 
 .production:hover,
 .production:focus {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.1);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .production:active {
-  box-shadow: 0 3px 5px 0 rgba(0,0,0,.1);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: $tablet-width) {
@@ -68,6 +68,7 @@
     padding-top: 10px;
     font-size: 20px;
   }
+
   .production__title::before {
     left: -63px;
   }
@@ -78,6 +79,7 @@
     width: 230px;
     margin-left: 59px;
   }
+
   .production__title::before {
     left: 2px;
     top: -44px;
@@ -115,9 +117,9 @@
   background-position: center center;
   background-size: contain;
   border: none;
-  outline: none;
+  outline: 0;
   cursor: pointer;
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .production__video-toggler:hover {
@@ -125,7 +127,7 @@
 }
 
 .production__video-toggler:active {
-  transform: scale(.8);
+  transform: scale(0.8);
   opacity: 0.3;
 }
 

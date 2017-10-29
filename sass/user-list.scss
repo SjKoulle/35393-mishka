@@ -1,7 +1,7 @@
 .user-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -14,7 +14,7 @@
 
 .user-list__search,
 .user-list__cart {
-    position: relative;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -97,7 +97,7 @@
   fill: $accent-color;
 }
 
-@media (max-width: $mobile-width-only)  {
+@media (max-width: $mobile-width-only) {
   .main-nav--opened .user-list__search,
   .main-nav--opened .user-list__cart {
     width: 100%;
